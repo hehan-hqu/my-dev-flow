@@ -32,3 +32,8 @@ desc = "Go to tmp"
 on   = "<C-d>"
 run  = "plugin diff"
 desc = "Diff the selected with the hovered file"
+
+[[mgr.prepend_keymap]]
+on   = "e"
+run  = 'shell --block -- nvim %h'
+desc = "Edit with nvim"

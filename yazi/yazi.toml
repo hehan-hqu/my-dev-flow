@@ -19,11 +19,18 @@ image_quality = 75
 
 [opener]
 edit = [{ run = 'nvim %s', block = true, desc = "Neovim", for = "unix" }]
+glow = [{ run = 'trae %s', desc = "Trae", for = "macos" }]
 open = [{ run = 'open %s', desc = "Open", for = "macos" }]
 reveal = [{ run = 'open -R %1', desc = "Reveal in Finder", for = "macos" }]
 
 [open]
 prepend_rules = [
+  { url = "*.md", use = [
+    "glow",
+    "edit",
+    "open",
+    "reveal",
+  ] },
   { mime = "text/*", use = [
     "edit",
     "open",
@@ -60,9 +67,8 @@ bizarre_retry = 5
 prepend_fetchers = [{ id = "git", url = "*", run = "git", prio = "normal", group = "git" }]
 prepend_previewers = [
     { url = "*.csv", run = "rich-preview"}, # for csv files
-    { url = "*.md", run = "rich-preview" }, # for markdown (.md) files
+    { url = "*.md", run = "code" },
     { url = "*.rst", run = "rich-preview"}, # for restructured text (.rst) files
     { url = "*.ipynb", run = "rich-preview"}, # for jupyter notebooks (.ipynb)
     { url = "*.json", run = "rich-preview"}, # for json (.json) files
-    { url = "*.md", run  = 'piper -- rich -j --left --panel=rounded --guides --line-numbers --force-terminal "$1"'}
 ]

@@ -18,5 +18,10 @@ use = "peterfication/mux"
 rev = "e4e6771"
 hash = "1fcbcce39229bd75e81be4dcb1d3e5a8"
 
+[[plugin.deps]]
+use = "boydaihungst/enhance-piper"
+rev = "9af29cd"
+hash = "5e91b2d903a38179c6d37e4ccf4d3def"
+
 [flavor]
 deps = []

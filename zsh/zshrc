@@ -58,3 +58,10 @@ alias cld='claude --dangerously-skip-permissions'
 if [[ -f "$HOME/.config/proxy.env" ]]; then
     source "$HOME/.config/proxy.env"
 fi
+
+# bun completions
+[ -s "/Users/hehan/.bun/_bun" ] && source "/Users/hehan/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
