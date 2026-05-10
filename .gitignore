@@ -1,0 +1,14 @@
+# Secrets
+zsh/proxy.env
+*.secret
+.env
+
+# OS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Editor
+.vscode/
+.idea/

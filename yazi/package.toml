@@ -1,0 +1,22 @@
+[[plugin.deps]]
+use = "AnirudhG07/rich-preview"
+rev = "7d616ad"
+hash = "d64feec9761392cbc250d199ab4b8a3a"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:diff"
+rev = "4ffa48f"
+hash = "8b1af6b5a69797ee951f2a80ce570818"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:piper"
+rev = "1db18bb"
+hash = "384464b6df8cb807425c521f8cd790f3"
+
+[[plugin.deps]]
+use = "peterfication/mux"
+rev = "e4e6771"
+hash = "1fcbcce39229bd75e81be4dcb1d3e5a8"
+
+[flavor]
+deps = []
