@@ -22,9 +22,6 @@ export LANG=en_US.UTF-8
 # 自动建议高亮样式
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=30
 
-# 隐藏 agnoster 主题中的用户名@主机名
-DEFAULT_USER="your_username"
-
 # =================== Ghostty 标题设置为当前目录 ===================
 if [[ -n "${GHOSTTY_RESOURCES_DIR:-}" ]]; then
     ghostty_set_title() {
